@@ -10,6 +10,8 @@
 #include <thread>
 #include "sillytui.h"
 
+// TODO: NCURSES MY GUY
+
 void sleep(int ms) {
     this_thread::sleep_for(chrono::milliseconds(ms));
 }
@@ -40,6 +42,8 @@ void sillytui::print() {
      * plan was to write this entire UI using ncurses but Windows
      * doesn't support it and I ran out of time to think of a
      * more sensible alternative.
+     *
+     * See the TODO at the top of this file
      */
     if (system("clear")) system("cls");
 
