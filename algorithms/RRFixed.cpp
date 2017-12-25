@@ -25,7 +25,6 @@ vector<process> RRFixed(vector<process> inputList, int quantum, sillytui tui) {
     // ye control loop!
     for (int time = 0, numProc = inputList.size(); finished.size() < numProc; time++) {
         // check for arriving processes (every time)
-        // bad guy shows up at t=3
         while (!inputList.empty() && inputList.back().getArrivalTime() == time) {
 
             ///////////////////////////

@@ -1,10 +1,24 @@
-# HOW TO COMPILE (using g++):
-- compile main.cpp and all .cpp files in the algorithms, process, and tui directories using the `-std =c++11` flag
+# Process Scheduling Simulator
+Thie is a project written for COMP 3475 (Operating Systems) to simulate 6 different types of CPU process scheduling algorithms. The algorithms are as follows:
+- FCFS (first come first served)
+- SJF (shortest job first)
+- SRT (shortest remaining time)
+- Priority
+- Round-robin with a fixed quantum
+- Round-robin with a variable quantum
 
-example (with wildcards):<br>
-`g++ -std=c++11 main.cpp algorithms/*.cpp process/process.cpp tui/tui.cpp`
+Instructions for running each one are included in the program.
 
-*note: sillytui.cpp uses windows.h for delay, this will only compile on Windows*
+## Build me!
+```bash
+$ git clone https://github.com/CALICAWESOME/COMP-3475-Scheduling-Sim
+$ cd COMP-3475-Scheduling-Sim
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ ./sim 
+```
 
-# HOW TO RUN:
-- run "PA_Scheduling_Sim.exe"
+## Future endeavors
+I'd like to port the UI for this to ncurses. Right now it's just a big bunch of print statements with a `system("clear")` in between each refresh which is _disgusting_ to even think about.
