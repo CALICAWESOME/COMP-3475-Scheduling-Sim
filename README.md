@@ -3,7 +3,7 @@ Thie is a project written for COMP 3475 (Operating Systems) to simulate 6 differ
 - FCFS (first come first served)
 - SJF (shortest job first)
 - SRT (shortest remaining time)
-- Priority
+- Fixed priority pre-emptive
 - Round-robin with a fixed quantum
 - Round-robin with a variable quantum
 
