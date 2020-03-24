@@ -21,4 +21,4 @@ $ ./sim
 ```
 
 ## Future endeavors
-I'd like to port the UI for this to ncurses. Right now it's just a big bunch of print statements with a `system("clear")` in between each refresh which is _disgusting_ to even think about.
+I'd like to port the UI for this to ncurses. Right now it's just a big bunch of print statements with a `system("clear")` in between each refresh which is pretty freaking nasty.
